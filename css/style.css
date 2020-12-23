@@ -301,3 +301,28 @@ body {
 }
 
 /* EXPERTISE */
+
+/* MAGIC */
+
+.magic {
+  background-image: url('../images/magic-bg.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left center;
+}
+
+.magic__inner {
+  padding: 101px 0px 214px;
+  max-width: 470px;
+  margin-left: auto;
+}
+
+.magic__inner p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.magic__title {
+  margin-bottom: 67px;
+}
+
+/* MAGIC */

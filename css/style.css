@@ -272,7 +272,7 @@ body {
   position: relative;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.3;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4.2875px;
@@ -309,6 +309,7 @@ body {
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: left center;
+  margin-bottom: 140px;
 }
 
 .magic__inner {
@@ -326,3 +327,225 @@ body {
 }
 
 /* MAGIC */
+
+/* PORTFOLIO*/
+
+.portfolio__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.portfolio__filter {
+  display: flex;
+  align-items: center;
+  padding-left: 65px;
+}
+
+.portfolio__filter-btn {
+  padding: 10px 5px;
+  border: none;
+  font-family: Open Sans;
+  font-style: 600;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333333;
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-bottom 0.4s ease-in-out;
+}
+
+.portfolio__filter-btn:not(:last-child) {
+  margin-right: 25px;
+}
+
+.portfolio__filter-btn:hover {
+  border-bottom: 1px solid #FCBB08;
+}
+
+.portfolio__inner {
+  column-count: 4;
+  column-gap: 22px;
+  margin-bottom: 72px;
+}
+
+.portfolio__item {
+  margin-bottom: 22px;
+}
+
+.portfolio__item {
+  width: 100%;
+}
+
+.portfolio__more {
+  padding: 42px 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  background-color: #F6F8FA;
+}
+
+.portfolio__more a {
+  text-decoration: none;
+  color: var(--title-color);
+
+}
+
+.blockquote {
+  max-width: 652px;
+  padding: 130px 0px;
+  margin: 0px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.blockquote__author {
+  display: block;
+  margin: 50px;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 2.2;
+  font-weight: 300;
+  color: #9E9E9E;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video__link {
+  background-image: url('../images/play-icon.svg');
+  width: 55px;
+  height: 64px;
+}
+
+.portfolio__numbers {
+  display: flex;
+  justify-content: space-around;
+  padding: 165px 0;
+  text-align: center;
+}
+
+.portfolio__item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.portfolio__item span {
+  display: block;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* PORTFOLIO*/
+
+/* SLIDER */
+
+.blog {
+  padding: 115px 0;
+  background-color: #F8F6FA;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  padding: 190px 0px;
+}
+
+.slider__title,
+.slider__text {
+  max-width: 585px;
+}
+
+.slider__title {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.slider__text {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #373A39;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(50%);
+
+}
+
+.slick-prev {
+  left: -95px;
+}
+
+.slick-next {
+  right: -95px;
+}
+
+.slick-dots {
+  max-width: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-dots button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--title-color);
+  opacity: 0.4;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slick-dots li:not(:last-child) {
+  margin-right: 14px;
+}
+
+.slick-dots .slick-active button {
+  display: inline-block;
+  transform: translateY(-2px);
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
+
+/* SLIDER */
